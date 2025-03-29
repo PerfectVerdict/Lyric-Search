@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap");
+@import "tailwindcss";
+.App {
+    text-align: center;
+    width:100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+* {
+    box-sizing: border-box; /* Make sure padding and border don't affect width */
+}
+
+
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure the width is 100% */
+}
+
+
