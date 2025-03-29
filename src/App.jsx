@@ -19,10 +19,10 @@ function App() {
 
     return (
    <> 
-      <div className="container mx-auto p-8">
-        <div className="flex flex-col text-center justify-center border border-green-400 w-full">
+      <div className="container flex min-h-screen min-w-screen">
+        <div className="flex w-full flex-col text-center justify-center border border-green-400">
 
-              <h1 className="text-white mb-5">Lyrics Finder</h1>
+              <h1 className="text-white mb-5 mt-5">Lyrics Finder</h1>
 {/* responiveness */}
             <div className="flex flex-col sm:flex-row justify-center mb-4 sm:space-x-4">            
                 <input className="p-2 m-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" type="text" 
@@ -37,12 +37,14 @@ function App() {
                  onClick={() => searchLyrics()}>
                     Search</button>
                     </div>
-            <hr /> 
 {/* responiveness */}
-            <pre className="font-sans text-xl font-semibold max-w-full sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl overflow-x-auto whitespace-pre-wrap">{lyrics}</pre>
+
+ <div className="flex justify-center w-full">
+          <pre className="lyrics w-full">{lyrics}</pre>
         </div>
         </div>
-        </>
+        </div>
+             </>
     );
 }
 

@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Playwrite+MX+Guides&display=swap');
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .App {
     text-align: center;
-    width:100%;
-    font-family: "Montserrat", sans-serif;
+    max-w-width:100%;
+
 }
 
 
@@ -12,10 +18,83 @@
 }
 
 
-
 html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     width: 100%; /* Ensure the width is 100% */
 }
+h1 {
+
+  font-family: "Playwrite MX Guides", cursive;
+}
+
+button {
+  font-family: "Playwrite MX Guides", cursive;
+  
+}
+body {
+
+font-family: "Comfortaa", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('/prayinggirl2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 
 
+/* Base styles for <pre> */
+.lyrics {
+
+font-family: "Comfortaa", sans-serif;
+
+  text-align: center;
+  font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+  font-weight: 300; /* Equivalent to font-semibold in Tailwind */
+  max-width: 100%; /* Default to full width */
+  padding: 1rem; /* Adds some padding */
+ overflow-x: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 15px;
+}
+@media (max-width: 517px) {
+  .lyrics {
+    width: 100%; /* Reduce the max-width for small screens */
+    font-size: 1px; /* Reduce font size for small screens (smaller text) */
+  }
+}
+
+/* For small screens (phones) */
+@media (max-width: 640px) {
+  .lyrics {
+    width: 90%; /* Reduce the max-width for small screens */
+
+    font-size: 1rem; /* Reduce font size for small screens (smaller text) */
+  }
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 640px) and (max-width: 768px) {
+  .lyrics {
+    width: 100%; /* Adjust the max-width for medium screens */
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 768px) {
+  .lyrics {
+    width: 100%; /* Expand the max-width for larger screens */
+  }
+}
+
+/* For extra-large screens (larger desktops) */
+@media (min-width: 1024px) {
+  .lyrics {
+    width: 100%; /* Further adjust max-width for very large screens */
+  }
+}
