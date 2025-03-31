@@ -11,7 +11,7 @@ function App() {
             return;
         }
         Axios.get(
-`https://api.lyrics.ovh/v1/${artist}/${song}`).then(res => {
+            `https://api.lyrics.ovh/v1/${artist}/${song}`).then(res => {
             console.log(res.data.lyrics);
             setLyrics(res.data.lyrics);
         })
@@ -37,9 +37,9 @@ function App() {
                  onClick={() => searchLyrics()}>
                     Search</button>
                     </div>
-{/* responiveness */}
+          {/* responiveness */}
 
- <div className="flex justify-center w-full">
+           <div className="flex justify-center w-full">
           <pre className="lyrics w-full">{lyrics}</pre>
         </div>
         </div>

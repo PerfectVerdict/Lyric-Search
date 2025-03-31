@@ -27,13 +27,9 @@ h1 {
   font-family: "Playwrite MX Guides", cursive;
 }
 
-button {
-  font-family: "Playwrite MX Guides", cursive;
-  
-}
 body {
 
-font-family: "Comfortaa", sans-serif;
+font-family:  "Comfortaa", sans-serif;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('/prayinggirl2.jpg');
   background-size: cover;
@@ -53,29 +49,26 @@ font-family: "Comfortaa", sans-serif;
 font-family: "Comfortaa", sans-serif;
 
   text-align: center;
-  font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
   font-weight: 300; /* Equivalent to font-semibold in Tailwind */
   max-width: 100%; /* Default to full width */
   padding: 1rem; /* Adds some padding */
  overflow-x: auto;
             white-space: pre-wrap;
             word-wrap: break-word;
-            font-size: 15px;
+            font-size: 25px;
 }
 @media (max-width: 517px) {
   .lyrics {
     width: 100%; /* Reduce the max-width for small screens */
-    font-size: 1px; /* Reduce font size for small screens (smaller text) */
   }
 }
 
 /* For small screens (phones) */
 @media (max-width: 640px) {
   .lyrics {
-    width: 90%; /* Reduce the max-width for small screens */
-
-    font-size: 1rem; /* Reduce font size for small screens (smaller text) */
-  }
+    margin-left: 10px;
+    margin-right: 10px;
+}
 }
 
 /* For medium screens (tablets) */
