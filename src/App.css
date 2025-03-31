@@ -26,7 +26,10 @@ h1 {
 
   font-family: "Playwrite MX Guides", cursive;
 }
-
+button {
+  color:white;
+  background-color: black;
+}
 body {
 
 font-family:  "Comfortaa", sans-serif;
@@ -40,6 +43,7 @@ font-family:  "Comfortaa", sans-serif;
   align-items: center;
   justify-content: center;
 
+  color: white;
 }
 
 
