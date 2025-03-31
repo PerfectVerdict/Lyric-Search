@@ -29,7 +29,8 @@ h1 {
 
 button {
   font-family: "Playwrite MX Guides", cursive;
-  
+  color: white;
+  background-color: black;
 }
 body {
 
@@ -43,7 +44,7 @@ font-family: "Comfortaa", sans-serif;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+color: white;
 }
 
 
